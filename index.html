@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"data-theme="light" >
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,20 +11,100 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- style sheet -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body class="font-poppins">
-    <main  class="bg-[#010313] min-h-screen bg-[url(resources/images/background.png)] bg-no-repeat bg-center	"></section>
-        <section class="home border min-h-screen flex flex-col justify-center items-center gap-5">
-            <h1 class="font-anton text-white text-5xl lg:text-9xl">ALPHABET CLASH</h1>
-            <p class="text-2xl text-white text-center">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn text-black uppercase text-2xl font-semibold mt-10">play now</button>
-        </section> 
-
-    <section class="playGround"></section>
-    <section class="score"></section>
+    <main
+      class="bg-[#010313] min-h-screen bg-[url(resources/images/background.png)] bg-no-repeat bg-center"
+    >
+      <!--1. home section -->
+      <section
+        class="home border min-h-screen flex flex-col justify-center items-center gap-5 hidden"
+      >
+        <h1 class="font-anton text-white text-5xl lg:text-9xl">
+          ALPHABET CLASH
+        </h1>
+        <p class="text-2xl text-white text-center">
+          Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+        </p>
+        <button class="btn text-black uppercase text-2xl font-semibold mt-10">
+          play now
+        </button>
+      </section>
+      <!--2. playGround section -->
+      <section class="playGround space-y-8 pt-10">
+        <!-- screen -->
+        <div
+          class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] lg:w-4/5 mx-auto"
+        >
+          <div class="flex justify-center">
+            <p class="text-white text-lg bg-[#010313CC] rounded-b-xl px-6 pb-4">
+              Don't watch keyboard while playing...
+            </p>
+          </div>
+          <div class="flex justify-center items-center h-5/6">
+            <p class="text-9xl font-semibold text-black">Y</p>
+          </div>
+        </div>
+        <!-- keyboard container-->
+        <div>
+          <!-- keyboard start -->
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+        </div>
+        <!-- keyboard end-->
+        <!-- life line -->
+        <div class="flex justify-between w-4/5 mx-auto">
+          <button
+            class="btn rounded-full text-xl font-medium text-white bg-pink-500 hover:bg-[#894189]"
+          >
+            Life
+            <img src="resources/images/Group 23.png" alt="" />
+            <span>1</span>
+          </button>
+          <button
+            class="btn rounded-full text-xl font-medium text-white bg-purple-500 hover:bg-[#894189]"
+          >
+            Score
+            <img src="resources/images/monetization_on.png" alt="" />
+            <span>1</span>
+          </button>
+        </div>
+      </section>
+      <!--3. score section -->
+      <section class="score"></section>
     </main>
-
 
     <script src="script.js"></script>
   </body>
