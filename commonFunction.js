@@ -20,3 +20,7 @@ function setBackgroundById(elementId) {
   const elementById = document.getElementById(elementId);
   elementById.classList.add("bg-orange-400");
 }
+function removeBackgroundById(elementId) {
+  const elementById = document.getElementById(elementId);
+  elementById.classList.remove("bg-orange-400");
+}
