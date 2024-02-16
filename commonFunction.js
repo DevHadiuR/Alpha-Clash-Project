@@ -24,3 +24,19 @@ function removeBackgroundById(elementId) {
   const elementById = document.getElementById(elementId);
   elementById.classList.remove("bg-orange-400");
 }
+function getProduceReduceId(elementById) {
+  const element = document.getElementById(elementById);
+  const elementText = element.innerText;
+  const value = parseInt(elementText);
+  return value;
+}
+function setElementById(elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+function getElementTextById(elementId) {
+  const element = document.getElementById(elementId);
+  const elementText = element.innerText;
+  const text = elementText.toLowerCase()
+  return text;
+}

@@ -20,7 +20,7 @@
       <!--1. home section -->
       <section
         id="home-screen"
-        class="border min-h-screen flex flex-col justify-center items-center gap-5"
+        class="border min-h-screen flex flex-col justify-center items-center gap-5 "
       >
         <h1 class="font-anton text-white text-5xl lg:text-9xl">
           ALPHABET CLASH
@@ -28,15 +28,12 @@
         <p class="text-2xl text-white text-center">
           Unleash Your Keyboard Kung Fu : Press “Enter” to Play
         </p>
-        <button
-          onclick="play()"
-          class="btn text-black uppercase text-2xl font-semibold mt-10"
-        >
+        <button onclick="play()" class="btn text-black uppercase text-2xl font-semibold mt-10">
           play now
         </button>
       </section>
       <!--2. playGround section -->
-      <section id="playground-screen" class="space-y-8 pt-10 hidden">
+      <section id="playground-screen" class="space-y-8 pt-10 hidden ">
         <!-- screen -->
         <div
           class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] lg:w-4/5 mx-auto"
@@ -97,29 +94,34 @@
           >
             Life
             <img src="resources/images/Group 23.png" alt="" />
-            <span>1</span>
+            <span id="current-life">5</span>
           </button>
           <button
             class="btn rounded-full text-xl font-medium text-white bg-purple-500 hover:bg-[#894189]"
           >
             Score
             <img src="resources/images/monetization_on.png" alt="" />
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </section>
       <!--3. score section -->
       <section
-        class="score border min-h-screen flex justify-center items-center hidden"
+        id="score"
+        class="border min-h-screen flex justify-center items-center hidden"
       >
         <div
           class="text-white text-center border space-y-5 p-10 rounded-xl bg-gradient-to-r from-violet-500 to-fuchsia-500]"
         >
+          <h2 class="text-3xl font-bold">Game Over !</h2>
           <h1>
             <span class="text-7xl font-extrabold">Score : </span>
-            <span class="text-6xl font-bold">12</span>
+            <span id="final-score" class="text-6xl font-bold">12</span>
           </h1>
-          <button class="btn text-black text-2xl font-semibold">
+          <button
+          onclick="play()"
+            class="btn text-black text-2xl font-semibold"
+          >
             Play Again
           </button>
           <p class="font-medium">Practice will make you Pro</p>
